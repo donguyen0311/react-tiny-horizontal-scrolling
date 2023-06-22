@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -62,10 +62,21 @@
     "@emotion/react": "^11.11.1",
     "classnames": "^2.3.2"
   },
-  "description": "Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.",
+  "description": "React Horizontal Scrolling Component",
   "directories": {
     "example": "example",
     "test": "test"
   },
-  "keywords": []
+  "keywords": [
+    "horizontal scrolling",
+    "react",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donguyen0311/react-tiny-horizontal-scrolling"
+  },
+  "bugs": {
+    "url": "https://github.com/donguyen0311/react-tiny-horizontal-scrolling/issues"
+  }
 }
