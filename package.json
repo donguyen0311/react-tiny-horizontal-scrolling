@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "react-tiny-horizontal-scrolling",
+  "author": "donguyen0311",
+  "module": "dist/react-tiny-horizontal-scrolling.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-tiny-horizontal-scrolling.cjs.production.min.js",
+      "limit": "15 KB"
+    },
+    {
+      "path": "dist/react-tiny-horizontal-scrolling.esm.js",
+      "limit": "15 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.2.4",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
+    "husky": "^8.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "size-limit": "^8.2.4",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.5.3",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "classnames": "^2.3.2"
+  },
+  "description": "Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "keywords": []
+}
